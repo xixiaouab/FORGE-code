@@ -1,0 +1,45 @@
+router:
+  input_dim: 789
+  n_thinking: 2
+  hidden_dim: 256
+  embedding_dim: 16
+  dropout: 0.1
+  variant: full
+
+utility:
+  lambda_in: 0.10
+  lambda_out: 0.20
+  f1_scale: fraction
+  normalization_fit_split: train
+
+stage1:
+  temperature: 1.0
+  learning_rate: 0.0002
+  weight_decay: 0.01
+  batch_size: 64
+  max_epochs: 50
+  patience: 7
+  seed: 42
+  device: cpu
+  hard_labels: false
+
+stage2:
+  steps: 5000
+  batch_size: 32
+  group_size: 8
+  inner_steps: 4
+  learning_rate: 0.00001
+  weight_decay: 0.01
+  clip_range: 0.2
+  advantage_epsilon: 0.0001
+  beta_initial: 0.05
+  entropy_alpha: 0.01
+  adaptive_beta: true
+  beta_interval: 100
+  beta_factor: 1.5
+  kl_low: 0.005
+  kl_high: 0.05
+  seed: 42
+  device: cpu
+  algorithm: grpo
+  dpo_beta: 0.1

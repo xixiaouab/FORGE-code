@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "forge-routing"
+version = "0.1.0"
+description = "Form-optimal evidence and thinking routing around a frozen language model"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "torch>=2.6,<3", "rank-bm25==0.2.2", "PyYAML>=6,<7"]
+
+[project.optional-dependencies]
+embeddings = ["sentence-transformers>=5,<6"]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+forge = "forge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
