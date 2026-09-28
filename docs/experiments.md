@@ -1,6 +1,6 @@
 # Experiment recipes
 
-These recipes extend the [README workflow](../README.md). They run this paper-based implementation and do not imply that historical paper scores have been reproduced. Keep each run's source/corpus hashes, split manifest, host revision/configuration, output records, and trained checkpoint together.
+These recipes extend the [README workflow](../README.md). Save each run's configuration, source/corpus hashes, split manifest, outputs, and checkpoint together.
 
 ## Features and action alphabets
 
@@ -158,7 +158,7 @@ forge refine --train runs/hotpotqa/full/train-warm \
   --seed 42 --output runs/hotpotqa/rloo/stage2.pt
 ```
 
-Optional optimizer controls are specified reference implementations. The manuscript does not provide enough details to recover every original DPO/RLOO/Dr.GRPO run; their concrete objectives are documented in [training.md](training.md#optional-optimizer-ablations). They do not replace unrelated third-party baselines.
+See [training.md](training.md#optional-optimizer-ablations) for the DPO, RLOO, and Dr.GRPO objectives.
 
 Offline refinement is useful for code and objective checks:
 
@@ -177,7 +177,7 @@ Fixed Direct/Summary/Raw are available through `forge infer --fixed` and `forge 
 
 `forge.baselines` provides three utilities:
 
-- `BM25ThresholdPolicy.fit(scores, utilities, split="dev", grid_size=21)`: calibrates two thresholds on development utility; lower/middle/higher score regions select Direct/Summary/Raw. The quantile threshold grid and rule direction are explicit reconstruction choices.
+- `BM25ThresholdPolicy.fit(scores, utilities, split="dev", grid_size=21)`: calibrates two thresholds on development utility; lower/middle/higher score regions select Direct/Summary/Raw.
 - `dev_fallback(router_utilities, fixed_utilities, split="dev", seed=..., n_resamples=...)`: uses a dev-only paired interval to choose routing or a fixed alternative.
 - `utility_oracle(utilities)`: per-query observed-utility argmax, a descriptive enumerated reference. It is not a deployable router or a universal F1/EM upper bound.
 
@@ -224,11 +224,11 @@ forge evaluate --data runs/hotpotqa/full/cached-bm25.jsonl \
 
 Use the checkpoint's saved cost weights if they differ from the `(0.1, 0.2)` defaults shown. Tune any heuristic on dev only and keep its search budget fixed across runs.
 
-Adaptive-RAG, TierMem/TierMem-style learned adaptation, s3, Sysformer, AdaReasoner, and provider-specific judged-answer protocols are not supplied as validated original implementations here. Adding a simple named wrapper would not establish correspondence with those experiments. Obtain and adapt the actual baselines, retain their original attribution, and document a matched evaluation before reporting those rows.
+Adaptive-RAG, TierMem, s3, Sysformer, AdaReasoner, and provider-specific judged-answer protocols require separate integrations. Use the same data splits, hosts, and evaluation budget for comparisons.
 
 ## Split seeds, training seeds, and nine-run summaries
 
-The canonical example uses data seed 42. To run the paper's uncertainty design, first choose **three data-sampling seeds** and **three router-training seeds** explicitly; save those values before running the experiment. The extra historical values are unknown and no fabricated nine-run output is included.
+The example uses data seed 42. For nine-run summaries, choose **three data-sampling seeds** and **three router-training seeds**, and save those values before running the experiment.
 
 For every data seed, run `forge split` into its own directory, enumerate that split with each frozen host, and fit scalers/normalizers using that split's training rows only. Train and refine three policies using the three recorded training seeds, preserving distinct outputs. Retune tunable baselines on that split's dev rows with the same budget. A shorter Stage-2 run must be labeled separately.
 
@@ -238,4 +238,4 @@ For each of the resulting nine runs, compute the five-benchmark macro F1 with eq
 
 Use the exact saved source-host checkpoint, feature order, scaler and cost weights on the recorded matched transfer subset. Switch only the host configuration and generate target-host features/answers under the stated protocol. Do not retrain Stage 2 or choose target-specific cost weights and still call it zero-shot transfer. A Full Fresh Online target query still requires four target-host probes.
 
-Explicitly distinguish Cached transfer tables from Fresh Online latency. The manuscript does not report Full Fresh Online API latency, and this repository does not infer that measurement from Lite or from cached records.
+Report Cached transfer results and measured Fresh Online latency separately.

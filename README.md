@@ -2,13 +2,11 @@
 
 **Form-Optimal Routing of Grounded Evidence for Frozen LLM Agents**
 
-[Project website](https://xixiaouab.github.io/projects/FORGE/) · [Paper](https://xixiaouab.github.io/projects/FORGE/assets/FORGE.pdf) · [Implementation decisions](docs/method-decisions.md) · [Experiment recipes](docs/experiments.md)
+[Project website](https://xixiaouab.github.io/projects/FORGE/) · [Paper](https://xixiaouab.github.io/projects/FORGE/assets/FORGE.pdf) · [Method details](docs/method-decisions.md) · [Experiment recipes](docs/experiments.md)
 
 FORGE learns which evidence form and thinking setting a frozen language model should use for each question. It combines offline action enumeration, supervised KL distillation, and policy-guided group-relative refinement.
 
-This is a **paper-based implementation**. It includes executable data processing, training, inference, and evaluation code. Original experimental checkpoints, response caches, and split manifests are not distributed here, and the paper's numerical results have not been re-established with this repository. Choices that the manuscript leaves unspecified are documented explicitly.
-
-## What is implemented
+## Features
 
 | Component | Implementation |
 |---|---|
@@ -59,7 +57,7 @@ forge split \
 
 Replace the source path with the dataset you have. Accepted benchmark names include `hotpotqa`, `2wikimultihopqa`, `musique`, `popqa`, and `fever`. The source must contain at least 2,300 distinct labeled questions for the sizes above. Split output contains `train.jsonl`, `dev.jsonl`, `test.jsonl`, `transfer.jsonl`, and `manifest.json`. Transfer is a matched subset of test. Existing split files are not overwritten.
 
-Seed 42 is the manuscript's canonical sampling seed. The original eligible source pool and exact sampled IDs are unavailable, so this command creates a newly recorded split rather than recovering the historical split. The manuscript specifies a 500-example HotpotQA development set for operating-point selection; using that size for other datasets is a configurable reconstruction choice.
+The example uses seed 42 and records the selected query IDs in the split manifest. Adjust the split sizes for your dataset.
 
 HotpotQA/2Wiki/MuSiQue candidate paragraphs are imported without consulting gold supporting-fact annotations. PopQA and FEVER need a separate textual corpus. Use `--corpus data/corpus.jsonl` consistently in all host-processing commands when using one. FEVER evidence page identifiers alone are not passage text.
 
@@ -202,14 +200,14 @@ Full Fresh Online includes all four probes plus the routed answer. Fixed baselin
 
 Repeat the workflow on the five benchmarks and preserve benchmark/query IDs when combining result JSONL files. Evaluation provides per-benchmark, equally weighted macro, and query-weighted pooled summaries. F1/EM are fractions in saved files; multiply by 100 for percentages. Paired comparison requires identical benchmark/query IDs and the same protocol.
 
-## Experiment matrix and reproducibility
+## Experiments
 
 - [Experiments](docs/experiments.md): Full/Lite/BGE variants, 3/6/9/12 actions, full-alphabet Stage-1 control, cost weights, optional optimizer ablations and baseline APIs.
-- [Method decisions](docs/method-decisions.md): exact feature formulas, prompts, retrieval choices, provider restrictions and accounting.
+- [Method details](docs/method-decisions.md): exact feature formulas, prompts, retrieval choices, provider restrictions and accounting.
 - [Training](docs/training.md): objectives, sampling proposal, normalization and checkpoint contract.
 - [Evaluation](docs/evaluation.md): metrics, macro averaging and paired uncertainty.
 
-The paper's nine-run analysis requires three independent data splits × three training seeds **per method and host**. Choose and record those seeds explicitly, regenerate corresponding artifacts, and retune baseline controls on each dev split with a matched budget. The additional historical seeds and manifests are not supplied, so this repository does not invent them or publish placeholder benchmark scores. Paired-query bootstrap intervals and nine-run standard deviations describe different uncertainty sources.
+For the nine-run analysis, use three independent data splits × three training seeds **per method and host**. Record the seeds, regenerate the artifacts, and retune baseline controls on each dev split with a matched budget. Paired-query bootstrap intervals and nine-run standard deviations describe different uncertainty sources.
 
 ## Citation
 

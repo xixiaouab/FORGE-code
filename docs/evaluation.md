@@ -50,9 +50,6 @@ resamples matched query pairs within each benchmark, then averages benchmark
 means equally in every replicate. The reported difference is candidate minus
 baseline. Supported metrics are `f1`, `em`, and `reported_cost_k_tokens`.
 
-The returned percentile interval is uncertainty over matched queries on the
-evaluated split. It is not the paper's standard deviation across three data
-splits and three training seeds. The code defaults to 10,000 replicates,
-95% confidence, and RNG seed 42; the manuscript does not specify its bootstrap
-replicate count, so this default is an implementation choice rather than a
-recovered experimental setting.
+The returned percentile interval measures uncertainty over matched queries on
+the evaluated split. Defaults are 10,000 replicates, 95% confidence, and RNG
+seed 42. Compute variation across data splits and training seeds separately.

@@ -1,8 +1,6 @@
-# Training and implementation choices
+# Training
 
 FORGE selects a support form and thinking setting before a frozen host answers. The primary pipeline is three-action offline enumeration, supervised KL warm-start, and six- or twelve-action policy-guided refinement. Full and Lite use separately trained policies.
-
-This repository implements the manuscript's stated method. The original experimental checkpoints, responses and unpublished configuration are not bundled. Where the manuscript does not define a unique algorithm, the concrete choices below make this implementation reproducible; they should not be mistaken for recovered settings from the authors' original runs.
 
 ## Architecture and action order
 
@@ -27,9 +25,9 @@ Biased parameter counts:
 | Lite 778 | 266,581 | 267,127 |
 | BGE+BM25 (773) | 265,301 | 265,847 |
 
-The stated Full six-arm architecture agrees with the manuscript's approximate 269K. A flat Full head has 269,574 parameters atK=6 and 271,116 atK=12; the manuscript's single flat 273K entry cannot be recovered from the described encoder/head alone. The implementation retains the stated layers rather than adding unexplained parameters.
+A flat Full head has 269,574 parameters at K=6 and 271,116 at K=12.
 
-Bias flags, exact dropout placement and initialization were not fully specified in the manuscript. The implementation uses the choices above and PyTorch initialization, then explicitly initializes the thinking head to uniform for Stage 1. Router training uses float 32.
+The router uses PyTorch initialization, then initializes the thinking head to uniform for Stage 1. Router training uses float32.
 
 ## Preprocessing and utility
 
@@ -55,7 +53,7 @@ u_dev = pareto_utility(
 )
 ```
 
-Array shapes are`(N,actions)` for F1/token records and`(N,features)` for features. F1 rewards must be fractions in[0,1], not displayed percentages. Utility is F1−0.1×normalized input tokens−0.2×normalized output tokens. The same training-fitted denominators must be used throughout each run. The paper says dataset-level maxima but does not identify their fitting population; training-only fitting is an explicit implementation choice that prevents held-out leakage. Caller-provided records determine which training actions enter the maxima.
+Array shapes are`(N,actions)` for F1/token records and`(N,features)` for features. F1 rewards must be fractions in[0,1], not displayed percentages. Utility is F1−0.1×normalized input tokens−0.2×normalized output tokens. The same training-fitted denominators must be used throughout each run. Caller-provided records determine which training actions enter the maxima.
 
 The training functions expect already transformed features and computed utilities. They do not fit scalers implicitly.
 
@@ -68,7 +66,7 @@ The training functions expect already transformed features and computed utilitie
 - Three-arm warm-start resets thinking to a uniform conditional distribution. On a factorized head, thinking weights/bias start at zero and receive no warm-start gradient. On a flat head, each support's initial thinking logits are equal.
 - `hard_labels=True` gives the hard-label baseline, using the first utility argmax.
 - Default AdamW: learning rate 2 e-4, weight decay 0.01, batch 64; maximum 50 epochs; patience 7.
-- Selection accuracy is agreement with the first argmax of development utility. The earliest best-accuracy checkpoint is restored. These exact tie/accuracy definitions are implementation choices.
+- Selection accuracy is agreement with the first argmax of development utility. The earliest best-accuracy checkpoint is restored.
 - If dev arrays are omitted, training-data selection is explicitly marked`selection_split="train"` in history. Use a disjoint dev split for reported experiments.
 
 ```python
@@ -97,7 +95,7 @@ def rewards(query_indices, actions):
 model, history = refine(model, x_train, rewards, RefineConfig())
 ```
 
-That example is explicitly **offline replay**. A live callback must execute the selected host actions and calculate rewards with the same frozen training normalizers. Replaying records does not recreate 1.28M actual host completions or the paper's GPU-hour measurement.
+This example uses **offline replay**. For live refinement, execute the selected host actions in the reward callback and calculate rewards with the same frozen training normalizers.
 
 ### Primary GRPO configuration
 
@@ -122,13 +120,13 @@ For each group, subtract its reward mean and divide by its population standard d
 
 Every 100 rollouts, use the post-update mean per-query joint KL of the last rollout: multiply beta by 1.5 above 0.05, divide by 1.5 below 0.005, otherwise keep it. The paper's nominal target 0.02 lies inside this band; no extra target penalty is added.
 
-### Exact sampling and optimization choices
+### Sampling and optimization
 
-The manuscript specifies support coverage but not the complete proposal. This implementation reserves one conditional thinking draw for each of Direct/Summary/Raw, samples the remainingG−3 actions with replacement from the old joint distribution, and shuffles their positions. WhenG<3 it samples jointly without coverage guarantees. Conditional draws remain numerically stable even when a support has vanishing joint mass.
+The sampler reserves one conditional thinking draw for each of Direct/Summary/Raw, samples the remainingG−3 actions with replacement from the old joint distribution, and shuffles their positions. WhenG<3 it samples jointly without coverage guarantees. Conditional draws remain numerically stable even when a support has vanishing joint mass.
 
-Stratification changes the proposal. The manuscript explicitly uses the uncorrected old-policy ratio and calls it a policy-guided clipped surrogate; this implementation preserves that choice and does not claim an unbiased policy gradient or add a hidden importance correction.
+Stratified rollouts use the uncorrected old-policy ratio in a policy-guided clipped surrogate.
 
-Further choices absent from the manuscript:
+Optimization settings:
 
 - Query sampling is uniform with replacement; default seed 42 controls query/action sampling and initialization.
 - Each inner step uses the entire fixed rollout. Old selected log probabilities and the Stage 1 reference remain fixed for all four steps.
@@ -138,7 +136,7 @@ Further choices absent from the manuscript:
 
 ## Optional optimizer ablations
 
-`RefineConfig.algorithm` accepts`grpo`,`dr_grpo`,`rloo`,`dpo`. The paper names the latter three without publishing full settings, so these are transparent reference implementations rather than reconstructed original ablation runs.
+`RefineConfig.algorithm` accepts `grpo`, `dr_grpo`, `rloo`, and `dpo`.
 
 | Algorithm | Implemented difference |
 |---|---|
@@ -169,14 +167,14 @@ model, checkpoint = load_checkpoint(
 
 The payload stores schema version, exact architecture/configuration, action layout, ordered feature names, weights, optional train-fitted normalization statistics, training configuration and metadata. Loading rejects mismatched schemas, state dict shapes, variants, alphabets and feature orders. It uses PyTorch`weights_only=True`. The serializer writes atomically.
 
-The supplied checkpoint API stores a trained policy and preprocessing state, not optimizer/RNG state for exact mid-run resume. Save run histories and source/corpus/split/model manifests alongside it. A checkpoint round-trip test confirms its predictions survive save/load; it does not validate historical paper scores.
+The checkpoint API stores the trained policy and preprocessing state. Optimizer/RNG state is not saved for mid-run resume. Save run histories and source/corpus/split/model manifests alongside the checkpoint.
 
 ## Defaults and tests
 
-[`configs/training.yaml`](../configs/training.yaml) contains defaults compatible with the configuration dataclasses. Router architecture is in`router`, cost weights in`utility`, and loop settings in`stage1`/`stage2`. The extra defaults absent from the paper are documented above.
+[`configs/training.yaml`](../configs/training.yaml) contains defaults compatible with the configuration dataclasses. Router architecture is in`router`, cost weights in`utility`, and loop settings in`stage1`/`stage2`.
 
 ```sh
 pytest tests/test_training.py -q
 ```
 
-Tests check probability normalization/factorization, initial uniform thinking, parameter counts, Boltzmann labels, clipping values/gradients, zero-variance groups, sampler coverage/stability, train-only normalizers, Stage 1 and Stage 2 learning, deterministic reruns, optional objectives and strict checkpoint round-trips. They use explicitly synthetic inputs and do not claim to reproduce benchmark results.
+Tests check probability normalization/factorization, initial uniform thinking, parameter counts, Boltzmann labels, clipping values/gradients, zero-variance groups, sampler coverage/stability, train-only normalizers, Stage 1 and Stage 2 learning, deterministic reruns, optional objectives and strict checkpoint round-trips. Tests use synthetic inputs.
