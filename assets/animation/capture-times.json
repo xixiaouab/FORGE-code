@@ -1,0 +1,1626 @@
+[
+  {
+    "file": "frames/frame-000.png",
+    "time": 0
+  },
+  {
+    "file": "frames/frame-001.png",
+    "time": 122
+  },
+  {
+    "file": "frames/frame-002.png",
+    "time": 188
+  },
+  {
+    "file": "frames/frame-003.png",
+    "time": 256
+  },
+  {
+    "file": "frames/frame-004.png",
+    "time": 325
+  },
+  {
+    "file": "frames/frame-005.png",
+    "time": 390
+  },
+  {
+    "file": "frames/frame-006.png",
+    "time": 460
+  },
+  {
+    "file": "frames/frame-007.png",
+    "time": 543
+  },
+  {
+    "file": "frames/frame-008.png",
+    "time": 628
+  },
+  {
+    "file": "frames/frame-009.png",
+    "time": 710
+  },
+  {
+    "file": "frames/frame-010.png",
+    "time": 806
+  },
+  {
+    "file": "frames/frame-011.png",
+    "time": 887
+  },
+  {
+    "file": "frames/frame-012.png",
+    "time": 970
+  },
+  {
+    "file": "frames/frame-013.png",
+    "time": 1056
+  },
+  {
+    "file": "frames/frame-014.png",
+    "time": 1139
+  },
+  {
+    "file": "frames/frame-015.png",
+    "time": 1222
+  },
+  {
+    "file": "frames/frame-016.png",
+    "time": 1310
+  },
+  {
+    "file": "frames/frame-017.png",
+    "time": 1407
+  },
+  {
+    "file": "frames/frame-018.png",
+    "time": 1508
+  },
+  {
+    "file": "frames/frame-019.png",
+    "time": 1612
+  },
+  {
+    "file": "frames/frame-020.png",
+    "time": 1705
+  },
+  {
+    "file": "frames/frame-021.png",
+    "time": 1791
+  },
+  {
+    "file": "frames/frame-022.png",
+    "time": 1889
+  },
+  {
+    "file": "frames/frame-023.png",
+    "time": 1984
+  },
+  {
+    "file": "frames/frame-024.png",
+    "time": 2073
+  },
+  {
+    "file": "frames/frame-025.png",
+    "time": 2155
+  },
+  {
+    "file": "frames/frame-026.png",
+    "time": 2258
+  },
+  {
+    "file": "frames/frame-027.png",
+    "time": 2357
+  },
+  {
+    "file": "frames/frame-028.png",
+    "time": 2457
+  },
+  {
+    "file": "frames/frame-029.png",
+    "time": 2596
+  },
+  {
+    "file": "frames/frame-030.png",
+    "time": 2694
+  },
+  {
+    "file": "frames/frame-031.png",
+    "time": 2779
+  },
+  {
+    "file": "frames/frame-032.png",
+    "time": 2859
+  },
+  {
+    "file": "frames/frame-033.png",
+    "time": 3045
+  },
+  {
+    "file": "frames/frame-034.png",
+    "time": 3133
+  },
+  {
+    "file": "frames/frame-035.png",
+    "time": 3222
+  },
+  {
+    "file": "frames/frame-036.png",
+    "time": 3338
+  },
+  {
+    "file": "frames/frame-037.png",
+    "time": 3425
+  },
+  {
+    "file": "frames/frame-038.png",
+    "time": 3525
+  },
+  {
+    "file": "frames/frame-039.png",
+    "time": 3626
+  },
+  {
+    "file": "frames/frame-040.png",
+    "time": 3726
+  },
+  {
+    "file": "frames/frame-041.png",
+    "time": 3845
+  },
+  {
+    "file": "frames/frame-042.png",
+    "time": 3960
+  },
+  {
+    "file": "frames/frame-043.png",
+    "time": 4047
+  },
+  {
+    "file": "frames/frame-044.png",
+    "time": 4123
+  },
+  {
+    "file": "frames/frame-045.png",
+    "time": 4185
+  },
+  {
+    "file": "frames/frame-046.png",
+    "time": 4266
+  },
+  {
+    "file": "frames/frame-047.png",
+    "time": 4357
+  },
+  {
+    "file": "frames/frame-048.png",
+    "time": 4480
+  },
+  {
+    "file": "frames/frame-049.png",
+    "time": 4662
+  },
+  {
+    "file": "frames/frame-050.png",
+    "time": 5491
+  },
+  {
+    "file": "frames/frame-051.png",
+    "time": 5708
+  },
+  {
+    "file": "frames/frame-052.png",
+    "time": 5797
+  },
+  {
+    "file": "frames/frame-053.png",
+    "time": 5880
+  },
+  {
+    "file": "frames/frame-054.png",
+    "time": 5965
+  },
+  {
+    "file": "frames/frame-055.png",
+    "time": 6051
+  },
+  {
+    "file": "frames/frame-056.png",
+    "time": 6134
+  },
+  {
+    "file": "frames/frame-057.png",
+    "time": 6305
+  },
+  {
+    "file": "frames/frame-058.png",
+    "time": 6407
+  },
+  {
+    "file": "frames/frame-059.png",
+    "time": 6483
+  },
+  {
+    "file": "frames/frame-060.png",
+    "time": 6574
+  },
+  {
+    "file": "frames/frame-061.png",
+    "time": 6672
+  },
+  {
+    "file": "frames/frame-062.png",
+    "time": 6753
+  },
+  {
+    "file": "frames/frame-063.png",
+    "time": 6837
+  },
+  {
+    "file": "frames/frame-064.png",
+    "time": 6914
+  },
+  {
+    "file": "frames/frame-065.png",
+    "time": 6998
+  },
+  {
+    "file": "frames/frame-066.png",
+    "time": 7088
+  },
+  {
+    "file": "frames/frame-067.png",
+    "time": 7171
+  },
+  {
+    "file": "frames/frame-068.png",
+    "time": 7250
+  },
+  {
+    "file": "frames/frame-069.png",
+    "time": 7339
+  },
+  {
+    "file": "frames/frame-070.png",
+    "time": 7421
+  },
+  {
+    "file": "frames/frame-071.png",
+    "time": 7504
+  },
+  {
+    "file": "frames/frame-072.png",
+    "time": 7592
+  },
+  {
+    "file": "frames/frame-073.png",
+    "time": 7737
+  },
+  {
+    "file": "frames/frame-074.png",
+    "time": 7819
+  },
+  {
+    "file": "frames/frame-075.png",
+    "time": 7902
+  },
+  {
+    "file": "frames/frame-076.png",
+    "time": 7988
+  },
+  {
+    "file": "frames/frame-077.png",
+    "time": 8091
+  },
+  {
+    "file": "frames/frame-078.png",
+    "time": 8187
+  },
+  {
+    "file": "frames/frame-079.png",
+    "time": 8271
+  },
+  {
+    "file": "frames/frame-080.png",
+    "time": 8353
+  },
+  {
+    "file": "frames/frame-081.png",
+    "time": 8437
+  },
+  {
+    "file": "frames/frame-082.png",
+    "time": 8521
+  },
+  {
+    "file": "frames/frame-083.png",
+    "time": 8607
+  },
+  {
+    "file": "frames/frame-084.png",
+    "time": 8706
+  },
+  {
+    "file": "frames/frame-085.png",
+    "time": 8792
+  },
+  {
+    "file": "frames/frame-086.png",
+    "time": 8874
+  },
+  {
+    "file": "frames/frame-087.png",
+    "time": 8941
+  },
+  {
+    "file": "frames/frame-088.png",
+    "time": 9005
+  },
+  {
+    "file": "frames/frame-089.png",
+    "time": 9071
+  },
+  {
+    "file": "frames/frame-090.png",
+    "time": 9147
+  },
+  {
+    "file": "frames/frame-091.png",
+    "time": 9240
+  },
+  {
+    "file": "frames/frame-092.png",
+    "time": 9354
+  },
+  {
+    "file": "frames/frame-093.png",
+    "time": 9471
+  },
+  {
+    "file": "frames/frame-094.png",
+    "time": 9554
+  },
+  {
+    "file": "frames/frame-095.png",
+    "time": 9638
+  },
+  {
+    "file": "frames/frame-096.png",
+    "time": 9740
+  },
+  {
+    "file": "frames/frame-097.png",
+    "time": 9845
+  },
+  {
+    "file": "frames/frame-098.png",
+    "time": 9927
+  },
+  {
+    "file": "frames/frame-099.png",
+    "time": 10011
+  },
+  {
+    "file": "frames/frame-100.png",
+    "time": 10093
+  },
+  {
+    "file": "frames/frame-101.png",
+    "time": 10187
+  },
+  {
+    "file": "frames/frame-102.png",
+    "time": 10271
+  },
+  {
+    "file": "frames/frame-103.png",
+    "time": 10352
+  },
+  {
+    "file": "frames/frame-104.png",
+    "time": 10437
+  },
+  {
+    "file": "frames/frame-105.png",
+    "time": 10520
+  },
+  {
+    "file": "frames/frame-106.png",
+    "time": 10606
+  },
+  {
+    "file": "frames/frame-107.png",
+    "time": 10686
+  },
+  {
+    "file": "frames/frame-108.png",
+    "time": 10772
+  },
+  {
+    "file": "frames/frame-109.png",
+    "time": 10854
+  },
+  {
+    "file": "frames/frame-110.png",
+    "time": 10937
+  },
+  {
+    "file": "frames/frame-111.png",
+    "time": 11017
+  },
+  {
+    "file": "frames/frame-112.png",
+    "time": 11099
+  },
+  {
+    "file": "frames/frame-113.png",
+    "time": 11204
+  },
+  {
+    "file": "frames/frame-114.png",
+    "time": 11290
+  },
+  {
+    "file": "frames/frame-115.png",
+    "time": 11391
+  },
+  {
+    "file": "frames/frame-116.png",
+    "time": 11492
+  },
+  {
+    "file": "frames/frame-117.png",
+    "time": 11590
+  },
+  {
+    "file": "frames/frame-118.png",
+    "time": 11689
+  },
+  {
+    "file": "frames/frame-119.png",
+    "time": 11770
+  },
+  {
+    "file": "frames/frame-120.png",
+    "time": 11854
+  },
+  {
+    "file": "frames/frame-121.png",
+    "time": 11938
+  },
+  {
+    "file": "frames/frame-122.png",
+    "time": 12038
+  },
+  {
+    "file": "frames/frame-123.png",
+    "time": 12139
+  },
+  {
+    "file": "frames/frame-124.png",
+    "time": 12239
+  },
+  {
+    "file": "frames/frame-125.png",
+    "time": 12324
+  },
+  {
+    "file": "frames/frame-126.png",
+    "time": 12394
+  },
+  {
+    "file": "frames/frame-127.png",
+    "time": 12474
+  },
+  {
+    "file": "frames/frame-128.png",
+    "time": 12541
+  },
+  {
+    "file": "frames/frame-129.png",
+    "time": 12610
+  },
+  {
+    "file": "frames/frame-130.png",
+    "time": 12704
+  },
+  {
+    "file": "frames/frame-131.png",
+    "time": 12786
+  },
+  {
+    "file": "frames/frame-132.png",
+    "time": 12870
+  },
+  {
+    "file": "frames/frame-133.png",
+    "time": 12947
+  },
+  {
+    "file": "frames/frame-134.png",
+    "time": 13038
+  },
+  {
+    "file": "frames/frame-135.png",
+    "time": 13118
+  },
+  {
+    "file": "frames/frame-136.png",
+    "time": 13200
+  },
+  {
+    "file": "frames/frame-137.png",
+    "time": 13283
+  },
+  {
+    "file": "frames/frame-138.png",
+    "time": 13373
+  },
+  {
+    "file": "frames/frame-139.png",
+    "time": 13468
+  },
+  {
+    "file": "frames/frame-140.png",
+    "time": 13553
+  },
+  {
+    "file": "frames/frame-141.png",
+    "time": 13637
+  },
+  {
+    "file": "frames/frame-142.png",
+    "time": 13720
+  },
+  {
+    "file": "frames/frame-143.png",
+    "time": 13805
+  },
+  {
+    "file": "frames/frame-144.png",
+    "time": 13888
+  },
+  {
+    "file": "frames/frame-145.png",
+    "time": 13970
+  },
+  {
+    "file": "frames/frame-146.png",
+    "time": 14052
+  },
+  {
+    "file": "frames/frame-147.png",
+    "time": 14139
+  },
+  {
+    "file": "frames/frame-148.png",
+    "time": 14232
+  },
+  {
+    "file": "frames/frame-149.png",
+    "time": 14316
+  },
+  {
+    "file": "frames/frame-150.png",
+    "time": 14397
+  },
+  {
+    "file": "frames/frame-151.png",
+    "time": 14529
+  },
+  {
+    "file": "frames/frame-152.png",
+    "time": 14627
+  },
+  {
+    "file": "frames/frame-153.png",
+    "time": 14711
+  },
+  {
+    "file": "frames/frame-154.png",
+    "time": 14771
+  },
+  {
+    "file": "frames/frame-155.png",
+    "time": 14840
+  },
+  {
+    "file": "frames/frame-156.png",
+    "time": 14905
+  },
+  {
+    "file": "frames/frame-157.png",
+    "time": 14985
+  },
+  {
+    "file": "frames/frame-158.png",
+    "time": 15070
+  },
+  {
+    "file": "frames/frame-159.png",
+    "time": 15153
+  },
+  {
+    "file": "frames/frame-160.png",
+    "time": 15237
+  },
+  {
+    "file": "frames/frame-161.png",
+    "time": 15319
+  },
+  {
+    "file": "frames/frame-162.png",
+    "time": 15399
+  },
+  {
+    "file": "frames/frame-163.png",
+    "time": 15480
+  },
+  {
+    "file": "frames/frame-164.png",
+    "time": 15570
+  },
+  {
+    "file": "frames/frame-165.png",
+    "time": 15677
+  },
+  {
+    "file": "frames/frame-166.png",
+    "time": 16013
+  },
+  {
+    "file": "frames/frame-167.png",
+    "time": 16125
+  },
+  {
+    "file": "frames/frame-168.png",
+    "time": 16191
+  },
+  {
+    "file": "frames/frame-169.png",
+    "time": 16274
+  },
+  {
+    "file": "frames/frame-170.png",
+    "time": 16338
+  },
+  {
+    "file": "frames/frame-171.png",
+    "time": 16405
+  },
+  {
+    "file": "frames/frame-172.png",
+    "time": 16469
+  },
+  {
+    "file": "frames/frame-173.png",
+    "time": 16537
+  },
+  {
+    "file": "frames/frame-174.png",
+    "time": 16608
+  },
+  {
+    "file": "frames/frame-175.png",
+    "time": 16674
+  },
+  {
+    "file": "frames/frame-176.png",
+    "time": 16786
+  },
+  {
+    "file": "frames/frame-177.png",
+    "time": 16888
+  },
+  {
+    "file": "frames/frame-178.png",
+    "time": 16989
+  },
+  {
+    "file": "frames/frame-179.png",
+    "time": 17098
+  },
+  {
+    "file": "frames/frame-180.png",
+    "time": 17207
+  },
+  {
+    "file": "frames/frame-181.png",
+    "time": 17289
+  },
+  {
+    "file": "frames/frame-182.png",
+    "time": 17371
+  },
+  {
+    "file": "frames/frame-183.png",
+    "time": 17573
+  },
+  {
+    "file": "frames/frame-184.png",
+    "time": 17653
+  },
+  {
+    "file": "frames/frame-185.png",
+    "time": 17723
+  },
+  {
+    "file": "frames/frame-186.png",
+    "time": 17826
+  },
+  {
+    "file": "frames/frame-187.png",
+    "time": 17909
+  },
+  {
+    "file": "frames/frame-188.png",
+    "time": 17973
+  },
+  {
+    "file": "frames/frame-189.png",
+    "time": 18053
+  },
+  {
+    "file": "frames/frame-190.png",
+    "time": 18153
+  },
+  {
+    "file": "frames/frame-191.png",
+    "time": 18271
+  },
+  {
+    "file": "frames/frame-192.png",
+    "time": 18342
+  },
+  {
+    "file": "frames/frame-193.png",
+    "time": 18408
+  },
+  {
+    "file": "frames/frame-194.png",
+    "time": 18474
+  },
+  {
+    "file": "frames/frame-195.png",
+    "time": 18542
+  },
+  {
+    "file": "frames/frame-196.png",
+    "time": 18623
+  },
+  {
+    "file": "frames/frame-197.png",
+    "time": 18754
+  },
+  {
+    "file": "frames/frame-198.png",
+    "time": 18855
+  },
+  {
+    "file": "frames/frame-199.png",
+    "time": 18958
+  },
+  {
+    "file": "frames/frame-200.png",
+    "time": 19058
+  },
+  {
+    "file": "frames/frame-201.png",
+    "time": 19157
+  },
+  {
+    "file": "frames/frame-202.png",
+    "time": 19271
+  },
+  {
+    "file": "frames/frame-203.png",
+    "time": 19357
+  },
+  {
+    "file": "frames/frame-204.png",
+    "time": 19438
+  },
+  {
+    "file": "frames/frame-205.png",
+    "time": 19520
+  },
+  {
+    "file": "frames/frame-206.png",
+    "time": 19604
+  },
+  {
+    "file": "frames/frame-207.png",
+    "time": 19705
+  },
+  {
+    "file": "frames/frame-208.png",
+    "time": 19795
+  },
+  {
+    "file": "frames/frame-209.png",
+    "time": 19873
+  },
+  {
+    "file": "frames/frame-210.png",
+    "time": 19952
+  },
+  {
+    "file": "frames/frame-211.png",
+    "time": 20034
+  },
+  {
+    "file": "frames/frame-212.png",
+    "time": 20120
+  },
+  {
+    "file": "frames/frame-213.png",
+    "time": 20203
+  },
+  {
+    "file": "frames/frame-214.png",
+    "time": 20304
+  },
+  {
+    "file": "frames/frame-215.png",
+    "time": 20386
+  },
+  {
+    "file": "frames/frame-216.png",
+    "time": 20492
+  },
+  {
+    "file": "frames/frame-217.png",
+    "time": 20575
+  },
+  {
+    "file": "frames/frame-218.png",
+    "time": 20642
+  },
+  {
+    "file": "frames/frame-219.png",
+    "time": 20733
+  },
+  {
+    "file": "frames/frame-220.png",
+    "time": 20837
+  },
+  {
+    "file": "frames/frame-221.png",
+    "time": 20917
+  },
+  {
+    "file": "frames/frame-222.png",
+    "time": 21002
+  },
+  {
+    "file": "frames/frame-223.png",
+    "time": 21090
+  },
+  {
+    "file": "frames/frame-224.png",
+    "time": 21191
+  },
+  {
+    "file": "frames/frame-225.png",
+    "time": 21307
+  },
+  {
+    "file": "frames/frame-226.png",
+    "time": 21420
+  },
+  {
+    "file": "frames/frame-227.png",
+    "time": 21502
+  },
+  {
+    "file": "frames/frame-228.png",
+    "time": 21588
+  },
+  {
+    "file": "frames/frame-229.png",
+    "time": 21670
+  },
+  {
+    "file": "frames/frame-230.png",
+    "time": 21753
+  },
+  {
+    "file": "frames/frame-231.png",
+    "time": 21857
+  },
+  {
+    "file": "frames/frame-232.png",
+    "time": 21936
+  },
+  {
+    "file": "frames/frame-233.png",
+    "time": 22022
+  },
+  {
+    "file": "frames/frame-234.png",
+    "time": 22099
+  },
+  {
+    "file": "frames/frame-235.png",
+    "time": 22188
+  },
+  {
+    "file": "frames/frame-236.png",
+    "time": 22299
+  },
+  {
+    "file": "frames/frame-237.png",
+    "time": 22379
+  },
+  {
+    "file": "frames/frame-238.png",
+    "time": 22458
+  },
+  {
+    "file": "frames/frame-239.png",
+    "time": 22523
+  },
+  {
+    "file": "frames/frame-240.png",
+    "time": 22588
+  },
+  {
+    "file": "frames/frame-241.png",
+    "time": 22670
+  },
+  {
+    "file": "frames/frame-242.png",
+    "time": 22753
+  },
+  {
+    "file": "frames/frame-243.png",
+    "time": 22850
+  },
+  {
+    "file": "frames/frame-244.png",
+    "time": 22931
+  },
+  {
+    "file": "frames/frame-245.png",
+    "time": 23016
+  },
+  {
+    "file": "frames/frame-246.png",
+    "time": 23099
+  },
+  {
+    "file": "frames/frame-247.png",
+    "time": 23167
+  },
+  {
+    "file": "frames/frame-248.png",
+    "time": 23245
+  },
+  {
+    "file": "frames/frame-249.png",
+    "time": 23305
+  },
+  {
+    "file": "frames/frame-250.png",
+    "time": 23371
+  },
+  {
+    "file": "frames/frame-251.png",
+    "time": 23465
+  },
+  {
+    "file": "frames/frame-252.png",
+    "time": 23536
+  },
+  {
+    "file": "frames/frame-253.png",
+    "time": 23602
+  },
+  {
+    "file": "frames/frame-254.png",
+    "time": 23671
+  },
+  {
+    "file": "frames/frame-255.png",
+    "time": 23735
+  },
+  {
+    "file": "frames/frame-256.png",
+    "time": 23802
+  },
+  {
+    "file": "frames/frame-257.png",
+    "time": 23870
+  },
+  {
+    "file": "frames/frame-258.png",
+    "time": 23948
+  },
+  {
+    "file": "frames/frame-259.png",
+    "time": 24031
+  },
+  {
+    "file": "frames/frame-260.png",
+    "time": 24114
+  },
+  {
+    "file": "frames/frame-261.png",
+    "time": 24198
+  },
+  {
+    "file": "frames/frame-262.png",
+    "time": 24284
+  },
+  {
+    "file": "frames/frame-263.png",
+    "time": 24368
+  },
+  {
+    "file": "frames/frame-264.png",
+    "time": 24451
+  },
+  {
+    "file": "frames/frame-265.png",
+    "time": 24532
+  },
+  {
+    "file": "frames/frame-266.png",
+    "time": 24636
+  },
+  {
+    "file": "frames/frame-267.png",
+    "time": 24703
+  },
+  {
+    "file": "frames/frame-268.png",
+    "time": 24770
+  },
+  {
+    "file": "frames/frame-269.png",
+    "time": 24837
+  },
+  {
+    "file": "frames/frame-270.png",
+    "time": 24905
+  },
+  {
+    "file": "frames/frame-271.png",
+    "time": 24970
+  },
+  {
+    "file": "frames/frame-272.png",
+    "time": 25035
+  },
+  {
+    "file": "frames/frame-273.png",
+    "time": 25101
+  },
+  {
+    "file": "frames/frame-274.png",
+    "time": 25172
+  },
+  {
+    "file": "frames/frame-275.png",
+    "time": 25249
+  },
+  {
+    "file": "frames/frame-276.png",
+    "time": 25331
+  },
+  {
+    "file": "frames/frame-277.png",
+    "time": 25416
+  },
+  {
+    "file": "frames/frame-278.png",
+    "time": 25499
+  },
+  {
+    "file": "frames/frame-279.png",
+    "time": 25586
+  },
+  {
+    "file": "frames/frame-280.png",
+    "time": 25681
+  },
+  {
+    "file": "frames/frame-281.png",
+    "time": 25765
+  },
+  {
+    "file": "frames/frame-282.png",
+    "time": 25855
+  },
+  {
+    "file": "frames/frame-283.png",
+    "time": 25936
+  },
+  {
+    "file": "frames/frame-284.png",
+    "time": 26023
+  },
+  {
+    "file": "frames/frame-285.png",
+    "time": 26128
+  },
+  {
+    "file": "frames/frame-286.png",
+    "time": 26227
+  },
+  {
+    "file": "frames/frame-287.png",
+    "time": 26309
+  },
+  {
+    "file": "frames/frame-288.png",
+    "time": 26392
+  },
+  {
+    "file": "frames/frame-289.png",
+    "time": 26473
+  },
+  {
+    "file": "frames/frame-290.png",
+    "time": 26551
+  },
+  {
+    "file": "frames/frame-291.png",
+    "time": 26632
+  },
+  {
+    "file": "frames/frame-292.png",
+    "time": 26723
+  },
+  {
+    "file": "frames/frame-293.png",
+    "time": 26824
+  },
+  {
+    "file": "frames/frame-294.png",
+    "time": 26931
+  },
+  {
+    "file": "frames/frame-295.png",
+    "time": 27022
+  },
+  {
+    "file": "frames/frame-296.png",
+    "time": 27106
+  },
+  {
+    "file": "frames/frame-297.png",
+    "time": 27206
+  },
+  {
+    "file": "frames/frame-298.png",
+    "time": 27287
+  },
+  {
+    "file": "frames/frame-299.png",
+    "time": 27371
+  },
+  {
+    "file": "frames/frame-300.png",
+    "time": 27453
+  },
+  {
+    "file": "frames/frame-301.png",
+    "time": 27537
+  },
+  {
+    "file": "frames/frame-302.png",
+    "time": 27620
+  },
+  {
+    "file": "frames/frame-303.png",
+    "time": 27699
+  },
+  {
+    "file": "frames/frame-304.png",
+    "time": 27816
+  },
+  {
+    "file": "frames/frame-305.png",
+    "time": 27904
+  },
+  {
+    "file": "frames/frame-306.png",
+    "time": 28011
+  },
+  {
+    "file": "frames/frame-307.png",
+    "time": 28095
+  },
+  {
+    "file": "frames/frame-308.png",
+    "time": 28179
+  },
+  {
+    "file": "frames/frame-309.png",
+    "time": 28274
+  },
+  {
+    "file": "frames/frame-310.png",
+    "time": 28354
+  },
+  {
+    "file": "frames/frame-311.png",
+    "time": 28437
+  },
+  {
+    "file": "frames/frame-312.png",
+    "time": 28521
+  },
+  {
+    "file": "frames/frame-313.png",
+    "time": 28609
+  },
+  {
+    "file": "frames/frame-314.png",
+    "time": 28699
+  },
+  {
+    "file": "frames/frame-315.png",
+    "time": 28778
+  },
+  {
+    "file": "frames/frame-316.png",
+    "time": 28842
+  },
+  {
+    "file": "frames/frame-317.png",
+    "time": 28909
+  },
+  {
+    "file": "frames/frame-318.png",
+    "time": 28999
+  },
+  {
+    "file": "frames/frame-319.png",
+    "time": 29086
+  },
+  {
+    "file": "frames/frame-320.png",
+    "time": 29155
+  },
+  {
+    "file": "frames/frame-321.png",
+    "time": 29237
+  },
+  {
+    "file": "frames/frame-322.png",
+    "time": 29326
+  },
+  {
+    "file": "frames/frame-323.png",
+    "time": 29410
+  },
+  {
+    "file": "frames/frame-324.png",
+    "time": 29492
+  },
+  {
+    "file": "frames/frame-325.png",
+    "time": 29619
+  },
+  {
+    "file": "frames/frame-326.png",
+    "time": 29788
+  },
+  {
+    "file": "frames/frame-327.png",
+    "time": 29859
+  },
+  {
+    "file": "frames/frame-328.png",
+    "time": 29924
+  },
+  {
+    "file": "frames/frame-329.png",
+    "time": 30066
+  },
+  {
+    "file": "frames/frame-330.png",
+    "time": 30155
+  },
+  {
+    "file": "frames/frame-331.png",
+    "time": 30260
+  },
+  {
+    "file": "frames/frame-332.png",
+    "time": 30347
+  },
+  {
+    "file": "frames/frame-333.png",
+    "time": 30428
+  },
+  {
+    "file": "frames/frame-334.png",
+    "time": 30522
+  },
+  {
+    "file": "frames/frame-335.png",
+    "time": 30638
+  },
+  {
+    "file": "frames/frame-336.png",
+    "time": 30706
+  },
+  {
+    "file": "frames/frame-337.png",
+    "time": 30804
+  },
+  {
+    "file": "frames/frame-338.png",
+    "time": 30881
+  },
+  {
+    "file": "frames/frame-339.png",
+    "time": 30974
+  },
+  {
+    "file": "frames/frame-340.png",
+    "time": 31055
+  },
+  {
+    "file": "frames/frame-341.png",
+    "time": 31137
+  },
+  {
+    "file": "frames/frame-342.png",
+    "time": 31220
+  },
+  {
+    "file": "frames/frame-343.png",
+    "time": 31307
+  },
+  {
+    "file": "frames/frame-344.png",
+    "time": 31389
+  },
+  {
+    "file": "frames/frame-345.png",
+    "time": 31490
+  },
+  {
+    "file": "frames/frame-346.png",
+    "time": 31590
+  },
+  {
+    "file": "frames/frame-347.png",
+    "time": 31669
+  },
+  {
+    "file": "frames/frame-348.png",
+    "time": 31756
+  },
+  {
+    "file": "frames/frame-349.png",
+    "time": 31838
+  },
+  {
+    "file": "frames/frame-350.png",
+    "time": 31921
+  },
+  {
+    "file": "frames/frame-351.png",
+    "time": 32004
+  },
+  {
+    "file": "frames/frame-352.png",
+    "time": 32088
+  },
+  {
+    "file": "frames/frame-353.png",
+    "time": 32257
+  },
+  {
+    "file": "frames/frame-354.png",
+    "time": 32357
+  },
+  {
+    "file": "frames/frame-355.png",
+    "time": 32457
+  },
+  {
+    "file": "frames/frame-356.png",
+    "time": 32554
+  },
+  {
+    "file": "frames/frame-357.png",
+    "time": 32637
+  },
+  {
+    "file": "frames/frame-358.png",
+    "time": 32724
+  },
+  {
+    "file": "frames/frame-359.png",
+    "time": 32804
+  },
+  {
+    "file": "frames/frame-360.png",
+    "time": 32893
+  },
+  {
+    "file": "frames/frame-361.png",
+    "time": 32953
+  },
+  {
+    "file": "frames/frame-362.png",
+    "time": 33031
+  },
+  {
+    "file": "frames/frame-363.png",
+    "time": 33115
+  },
+  {
+    "file": "frames/frame-364.png",
+    "time": 33206
+  },
+  {
+    "file": "frames/frame-365.png",
+    "time": 33285
+  },
+  {
+    "file": "frames/frame-366.png",
+    "time": 33373
+  },
+  {
+    "file": "frames/frame-367.png",
+    "time": 33454
+  },
+  {
+    "file": "frames/frame-368.png",
+    "time": 33539
+  },
+  {
+    "file": "frames/frame-369.png",
+    "time": 33617
+  },
+  {
+    "file": "frames/frame-370.png",
+    "time": 33703
+  },
+  {
+    "file": "frames/frame-371.png",
+    "time": 33783
+  },
+  {
+    "file": "frames/frame-372.png",
+    "time": 33874
+  },
+  {
+    "file": "frames/frame-373.png",
+    "time": 33974
+  },
+  {
+    "file": "frames/frame-374.png",
+    "time": 34073
+  },
+  {
+    "file": "frames/frame-375.png",
+    "time": 34193
+  },
+  {
+    "file": "frames/frame-376.png",
+    "time": 34293
+  },
+  {
+    "file": "frames/frame-377.png",
+    "time": 34359
+  },
+  {
+    "file": "frames/frame-378.png",
+    "time": 34423
+  },
+  {
+    "file": "frames/frame-379.png",
+    "time": 34503
+  },
+  {
+    "file": "frames/frame-380.png",
+    "time": 34588
+  },
+  {
+    "file": "frames/frame-381.png",
+    "time": 34672
+  },
+  {
+    "file": "frames/frame-382.png",
+    "time": 34760
+  },
+  {
+    "file": "frames/frame-383.png",
+    "time": 34856
+  },
+  {
+    "file": "frames/frame-384.png",
+    "time": 34936
+  },
+  {
+    "file": "frames/frame-385.png",
+    "time": 35021
+  },
+  {
+    "file": "frames/frame-386.png",
+    "time": 35120
+  },
+  {
+    "file": "frames/frame-387.png",
+    "time": 35268
+  },
+  {
+    "file": "frames/frame-388.png",
+    "time": 35357
+  },
+  {
+    "file": "frames/frame-389.png",
+    "time": 35460
+  },
+  {
+    "file": "frames/frame-390.png",
+    "time": 35520
+  },
+  {
+    "file": "frames/frame-391.png",
+    "time": 35639
+  },
+  {
+    "file": "frames/frame-392.png",
+    "time": 35751
+  },
+  {
+    "file": "frames/frame-393.png",
+    "time": 35836
+  },
+  {
+    "file": "frames/frame-394.png",
+    "time": 35921
+  },
+  {
+    "file": "frames/frame-395.png",
+    "time": 36004
+  },
+  {
+    "file": "frames/frame-396.png",
+    "time": 36089
+  },
+  {
+    "file": "frames/frame-397.png",
+    "time": 36208
+  },
+  {
+    "file": "frames/frame-398.png",
+    "time": 36311
+  },
+  {
+    "file": "frames/frame-399.png",
+    "time": 36394
+  },
+  {
+    "file": "frames/frame-400.png",
+    "time": 36481
+  },
+  {
+    "file": "frames/frame-401.png",
+    "time": 36589
+  },
+  {
+    "file": "frames/frame-402.png",
+    "time": 36692
+  },
+  {
+    "file": "frames/frame-403.png",
+    "time": 36785
+  },
+  {
+    "file": "frames/frame-404.png",
+    "time": 36854
+  },
+  {
+    "file": "frames/frame-405.png",
+    "time": 36938
+  }
+]

@@ -7,6 +7,7 @@ name = "forge-routing"
 version = "0.1.0"
 description = "Form-optimal evidence and thinking routing around a frozen language model"
 requires-python = ">=3.11"
+license = { file = "LICENSE" }
 dependencies = ["numpy>=1.26,<3", "torch>=2.6,<3", "rank-bm25==0.2.2", "PyYAML>=6,<7"]
 
 [project.optional-dependencies]
