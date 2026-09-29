@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/forge-mark.svg" alt="FORGE logo" width="72">
+<img src="assets/forge-mark.png" alt="FORGE robot selecting an evidence card" width="72">
 
 # FORGE
 
