@@ -11,7 +11,7 @@
 Xi Xiao · Yunbei Zhang · Chen Liu · Lin Zhao · Jialin Chen<br>
 Tianchen Zhao · Xiang Xu · Youngeun Kim · Tianyang Wang · Min Xu
 
-[![Paper](https://img.shields.io/badge/Paper-PDF-343434?style=flat-square)](https://xixiaouab.github.io/projects/FORGE/assets/FORGE.pdf)
+[![Paper](https://img.shields.io/badge/Paper-arXiv%3A2609.34358-343434?style=flat-square)](https://arxiv.org/abs/2609.34358)
 [![Project](https://img.shields.io/badge/Project-Website-7955a0?style=flat-square)](https://xixiaouab.github.io/projects/FORGE/)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776ab?style=flat-square)](pyproject.toml)
 [![License](https://img.shields.io/badge/License-MIT-343434?style=flat-square)](LICENSE)
@@ -101,12 +101,14 @@ The tests use synthetic fixtures and a localhost HTTP server. The embedding mode
 ## Citation
 
 ```bibtex
-@article{xiao2026forge,
+@misc{xiao2026forge,
   title={FORGE: Form-Optimal Routing of Grounded Evidence for Frozen LLM Agents},
   author={Xiao, Xi and Zhang, Yunbei and Liu, Chen and Zhao, Lin and Chen, Jialin and Zhao, Tianchen and Xu, Xiang and Kim, Youngeun and Wang, Tianyang and Xu, Min},
   year={2026},
-  note={Preprint},
-  url={https://xixiaouab.github.io/projects/FORGE/}
+  eprint={2609.34358},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2609.34358}
 }
 ```
 
